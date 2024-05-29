@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_register1.css">
+</head>
+<body>
+  <form id="registerForm" action="register.php" method="post">
+    <div class="header">
+      <h1 class="judul">DAFTAR PENGAJAR</h1>
+      <p class="subtitle">Isi data diri kamu yuk!</p>
+    </div>
+    <div class="kotak">
+      <div class="kotak-input">
+        <label class="label" for="Nama">Username</label>
+        <input class="input" type="text" id="Nama" name="Nama" placeholder="Masukkan Nama" required>
+      </div>
+      <div class="kotak-input">
+        <label class="label" for="NIP">NIP</label>
+        <input class="input" type="text" id="NIP" name="NIP" placeholder="Masukkan NIP" required>
+      </div>
+      <div class="kotak-input">
+        <label class="label" for="birthDate">Tanggal Lahir</label>
+        <input class="input" type="date" id="birthDate" name="birthDate" placeholder="Tanggal Lahir" required>
+      </div>
+      <div class="kotak-input">
+        <label class="label">Jenis Kelamin</label>
+        <div class="gender-options">
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Laki-Laki</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Perempuan</label>
+          </div>
+        </div>
+      </div>
+      <div class="kotak-input">
+        <label class="label" for="password">Password</label>
+        <input class="input" type="password" id="password" name="password" placeholder="password" required>
+      </div>
+      <button type="submit" class="tombol">Register</button>
+      <a href="login.html">Sudah punya akun? Masuk Disini</a>
+    </div>
+  </form>
+</body>
+</html>
